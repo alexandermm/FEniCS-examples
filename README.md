@@ -11,6 +11,6 @@ Example code for solving the Navier-Stokes (NS) equations using [FEniCS] (https:
 ##Adaptive solutions:
 * adaptive2dBend.py: same code as 2dBend.py but including a few more lines for using the adaptive variational solver. 
 * adaptive3dBend.py: same code as 3dBend.py. The code needs a while to run, and needs sufficient memory due to the final number of elements.
-* adaptiveDrivenCavity.py: shows how to run the known driven cavity problem using the adaptive variational solver. Same code as the one found in the FeniCS library with minor modifications.
+* adaptiveDrivenCavity.py: shows how to run the known [lid driven cavity problem] (http://www.cfd-online.com/Wiki/Lid-driven_cavity_problem) using the adaptive variational solver. Same code as the one found in the FeniCS library with minor modifications.
 * adaptive2Vortex.py: shows one way to include 2D vortices in FEniCS, how to use the adaptive variational solver with vortices and how to fix the pressure at a single node (corresponding to a stagnation point in the flow).
 * 2VortexMesh.py: shows how to make an initialy refined mesh using [PyDistMesh] (https://github.com/bfroehle/pydistmesh) and writing it to a FEniCS compatible mesh file format.
