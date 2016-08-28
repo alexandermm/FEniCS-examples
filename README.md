@@ -3,8 +3,8 @@ Example code for solving the Navier-Stokes (NS) equations using [FEniCS] (https:
 
 ## Non-adaptive solutions:
 * 2dDuct.py: pipe flow on a straight 2d duct. Solves the full nonlinear incompressible NS equations using the non adaptive nonlinear solver. Note that to get the right solution, the variational form of the NS equations has an extra term, in order to enforce fluid moving normal to inlets and outlets. More on this [here] (https://harishnarayanan.org/research/navier-stokes/). The solution is the expected analytic parabolic velocity profile along the duct, with a linear pressure drop.
-* 3dDuct.py: same as above, but in 3D, with the mesh generated using the meshing library msch, included with FEniCS. This problem also has a simple analytic solution for checking the program.
-* 2dBend.py: pipe flow in an elbow. The code shows how to combine the geometric shape primitives of the msch library.
+* 3dDuct.py: same as above, but in 3D, with the mesh generated using the meshing library [mshr] (https://bitbucket.org/fenics-project/mshr/wiki/Home), included with FEniCS. This problem also has a simple analytic solution for checking the program.
+* 2dBend.py: pipe flow in an elbow. The code shows how to combine the geometric shape primitives of the mshr library.
 * 3dBend.py: same as 2dBend.py but in 3D and using a sharp bend due to two intersecting cylinders.
 
 ##Adaptive solutions:
