@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# Fenics-examples
-Solutions to the Navier-Stokes equations using fenics using the adaptive and plain nonlinear variational solver
-=======
+
 # FEniCS-examples
 Example code for solving the Navier-Stokes (NS) equations using [FEniCS] (https://fenicsproject.org/), with the adaptive and plain nonlinear variational solver. The solver is able to solve for any steady laminar flow using finite elements. The adaptive version can subdivide elements based on an error estimate of an averaged parameter. For example, one can set the flow profile in one boundary such as an inlet and subdivide the mesh until the averaged pressure on that boundary is 10% of the actual estimated value. The pressure can be set to zero at the outlet. More details are available [here] (https://fenicsproject.org/featured/2011/automated_error_control.html). The paper describing the adaptive algorithm is [here] (http://arxiv.org/abs/1205.3096).
 
@@ -17,4 +14,3 @@ Example code for solving the Navier-Stokes (NS) equations using [FEniCS] (https:
 * adaptiveDrivenCavity.py: shows how to run the known driven cavity problem using the adaptive variational solver. Same code as the one found in the FeniCS library with minor modifications.
 * adaptive2Vortex.py: shows one way to include 2D vortices in FEniCS, how to use the adaptive variational solver with vortices and how to fix the pressure at a single node (corresponding to a stagnation point in the flow).
 * 2VortexMesh.py: shows how to make an initialy refined mesh using [PyDistMesh] (https://github.com/bfroehle/pydistmesh) and writing it to a FEniCS compatible mesh file format.
->>>>>>> 219fd2fd45ef2e4c53461040838c8971b3db7003
