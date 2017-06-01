@@ -8,7 +8,7 @@ Example code for solving the Navier-Stokes (NS) equations using [FEniCS](https:/
 * 2dBend.py: pipe flow in an elbow. The code shows how to combine the geometric shape primitives of the mshr library.
 * 3dBend.py: same as 2dBend.py but in 3D and using a sharp bend due to two intersecting cylinders.
 
-##Adaptive solutions:
+## Adaptive solutions:
 * adaptive2dBend.py: same code as 2dBend.py but including a few more lines for using the adaptive variational solver. 
 * adaptive3dBend.py: same code as 3dBend.py. The code needs a while to run, and needs sufficient memory due to the final number of elements.
 * adaptiveDrivenCavity.py: shows how to run the known [lid driven cavity problem](http://www.cfd-online.com/Wiki/Lid-driven_cavity_problem) using the adaptive variational solver. Same code as the one found in the FeniCS library with minor modifications.
